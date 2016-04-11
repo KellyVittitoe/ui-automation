@@ -1,0 +1,88 @@
+﻿
+{
+   "providerName": "IBM",
+   "description": "DESCRIPTION",
+   "name": "NAME",
+   "url": "https://ubx-qa1-segment-fb.adm01.com/FBEndpoint",
+   "hashAlgorithm": null,
+   "endpointTypes": {
+     "segment": {
+       "source": {
+         "enabled": false,
+         "url": null,
+         "dataWindow": 0,
+         "producerType": "pull"
+       },
+       "destination": {
+         "enabled": true,
+         "destinationType": "facebook",
+         "url": null,
+        "shareActions": {
+           "add": true,
+           "remove": false,
+           "replace": false,
+           "defaultShareAction": "ADD"
+         }
+       }
+     },
+     "event": {
+       "source": {
+         "enabled": false,
+         "url": null,
+         "dataWindow": null,
+         "producerType": null
+       },
+       "destination": {
+         "enabled": false,
+         "destinationType": "push",
+         "url": null
+       }
+     }
+   },
+   "marketingDatabasesDefinition": {
+     "marketingDatabases": [
+       {
+         "name": "marketingDBSource1",
+         "identifiers": [
+           {
+             "name": "UID",
+             "type": "facebookId",
+             "hashMode": null,
+             "hashAlgorithm": null,
+             "isEventOnly": false,
+             "isCaseSensitive": false,
+             "isRequired": false
+           },
+           {
+             "name": "EMAIL_SHA256",
+             "type": "email",
+             "hashMode": "HASHED",
+             "hashAlgorithm": "EMAIL_SHA256",
+             "isEventOnly": false,
+             "isCaseSensitive": false,
+             "isRequired": false
+           },
+           {
+             "name": "FB_Phone",
+             "type": "PhoneNumber",
+             "hashMode": "HASHED",
+             "hashAlgorithm": "PHONE_SHA256",
+             "isEventOnly": false,
+             "isCaseSensitive": false,
+             "isRequired": false
+           },
+           {
+             "name": "MOBILE_ADVERTISER_ID",
+             "type": "appUserId",
+             "hashMode": null,
+             "hashAlgorithm": null,
+             "isEventOnly": false,
+             "isCaseSensitive": false,
+             "isRequired": false
+           }
+         ],
+         "attributes": []
+       }
+     ]
+   }
+ }

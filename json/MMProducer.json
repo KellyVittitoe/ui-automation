@@ -1,0 +1,163 @@
+{
+
+  "name" : "NAME",        
+
+  "description" : "DESCRIPTION", 
+
+  "providerName" : "MediaMath", 
+
+  "url" : "https://ubx-qa1-segment-mm.adm01.com/MMEndpoint" ,          
+
+  "endpointTypes" : 
+
+   {
+
+    "event": {
+
+        "source": {
+
+          "enabled": true
+
+        }
+
+      },
+
+     "segment" : 
+
+     {
+
+        "destination" : 
+
+        {
+
+           "enabled" : true,
+
+           "destinationType" : "push"
+
+          }
+
+     }
+
+   },
+
+    "marketingDatabasesDefinition":
+
+    {
+
+        "marketingDatabases":
+
+        [
+
+            {
+
+                "name":"MMmarketingDBSource1",
+
+                "identifiers":
+
+                [
+
+                     {
+
+                        "name":"DSPID_MEDIAMATH",
+
+                        "type":"DSPID_MEDIAMATH",
+
+            "hashMode": null,
+
+            "hashAlgorithm": null,
+
+                        "isEventOnly": false,
+
+                        "isCaseSensitive": false
+
+                    },
+
+                     {
+
+                        "name":  "ECID",
+
+                        "type": "engagecontactid",
+
+            "hashMode": null,
+
+            "hashAlgorithm": null,
+
+                        "isEventOnly": false,
+
+                        "isCaseSensitive": false
+
+                    },
+
+                    {
+
+                        "name":"userprofileid",
+
+                        "type":"USER_PROFILE_ID",
+
+            "hashMode": null,
+
+            "hashAlgorithm": null,
+
+                        "isEventOnly": false,
+
+                        "isCaseSensitive": false
+
+                    },
+
+        {
+
+                        "name":"EMAIL",
+
+                        "type":"email",
+
+            "hashMode": null,
+
+            "hashAlgorithm": null,
+
+                        "isEventOnly": false,
+
+                        "isCaseSensitive": false
+
+                   },
+
+              {
+
+                   "name":"EMAIL_SHA256",
+
+                   "type":"email",
+
+                   "hashAlgorithm":"EMAIL_SHA256",
+
+                   "hashMode":"HASHED",
+
+                        "isEventOnly": false,
+
+                        "isCaseSensitive": false
+
+              },
+
+                    {
+
+                        "name":"PHONE_SHA256",
+
+                        "type":"PhoneNumber",
+
+                  "hashAlgorithm":"PHONE_SHA256",
+
+                  "hashMode":"HASHED",
+
+                        "isEventOnly": false,
+
+                        "isCaseSensitive": false
+
+                    }
+
+                ]
+
+            }
+
+        ]
+
+    }
+
+}

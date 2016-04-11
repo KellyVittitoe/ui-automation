@@ -1,0 +1,105 @@
+﻿{
+   "providerName": "IBM",
+   "description": "DESCRIPTION",
+   "name": "NAME",
+   "url": "https://segment-mm-01.ubx.ibmmarketingcloud.com/MMEndpoint",
+   "hashAlgorithm": null,
+   "endpointTypes": {
+     "segment": {
+       "source": {
+         "enabled": false,
+         "url": null,
+         "dataWindow": 0,
+         "producerType": "pull"
+       },
+       "destination": {
+         "enabled": true,
+         "destinationType": "push",
+         "url": null,
+                     "shareActions": {
+           "add": true,
+           "remove": true,
+           "replace": false,
+           "defaultShareAction": "ADD"
+         }
+       }
+     },
+     "event": {
+       "source": {
+         "enabled": false,
+         "url": null,
+         "dataWindow": null,
+         "producerType": null
+       },
+       "destination": {
+         "enabled": false,
+         "destinationType": "push",
+         "url": null
+       }
+     }
+   },
+   "marketingDatabasesDefinition": {
+     "marketingDatabases": [
+       {
+         "name": "marketingDBSource1",
+         "identifiers": [
+           {
+             "name": "sessionId",
+             "type": "DAsessionId",
+             "hashMode": null,
+             "hashAlgorithm": null,
+             "isEventOnly": false,
+             "isCaseSensitive": false,
+             "isRequired": false
+           },
+           {
+             "name": "cookieId",
+             "type": "DAcookieId",
+             "hashMode": null,
+             "hashAlgorithm": null,
+             "isEventOnly": false,
+             "isCaseSensitive": false,
+             "isRequired": false
+           },
+           {
+             "name": "UID",
+             "type": "facebookId",
+             "hashMode": null,
+             "hashAlgorithm": null,
+             "isEventOnly": false,
+             "isCaseSensitive": false,
+             "isRequired": false
+           },
+           {
+             "name": "EMAIL_SHA256",
+             "type": "email",
+             "hashMode": "HASHED",
+             "hashAlgorithm": "EMAIL_SHA256",
+             "isEventOnly": false,
+             "isCaseSensitive": false,
+             "isRequired": false
+           },
+           {
+             "name": "PHONE_SHA256",
+             "type": "PhoneNumber",
+             "hashMode": "HASHED",
+             "hashAlgorithm": "PHONE_SHA256",
+             "isEventOnly": false,
+             "isCaseSensitive": false,
+             "isRequired": false
+           },
+           {
+             "name": "MOBILE_ADVERTISER_ID",
+             "type": "appUserId",
+             "hashMode": null,
+             "hashAlgorithm": null,
+             "isEventOnly": false,
+             "isCaseSensitive": false,
+             "isRequired": false
+           }
+         ],
+         "attributes": []
+       }
+     ]
+   }
+ }

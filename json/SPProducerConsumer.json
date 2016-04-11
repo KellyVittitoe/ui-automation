@@ -1,0 +1,334 @@
+﻿{
+
+    "providerName": "IBM",
+
+    "description": "DESCRIPTION",
+
+    "name": "NAME",
+
+    "url": "https://ubx-qa1-segment-sp.adm01.com/SPEndpoint",
+
+    "hashAlgorithm": null,
+
+    "endpointTypes": {
+
+      "segment": {
+
+        "source": {
+
+          "enabled": true,
+
+          "url": "https://ubx-qa1-segment-sp.adm01.com/SPEndpoint",
+
+          "dataWindow": 0,
+
+          "producerType": null
+
+        },
+
+        "destination": {
+
+          "enabled": true,
+
+          "destinationType": "push",
+
+          "url": "https://ubx-qa1-segment-sp.adm01.com/SPEndpoint",
+
+                      "shareActions": {
+
+            "add": true,
+
+            "remove": false,
+
+            "replace": true,
+
+            "defaultShareAction": "REPLACE"
+
+          }
+
+        }
+
+      },
+
+      "event": {
+
+        "source": {
+
+          "enabled": true,
+
+          "url": null,
+
+          "dataWindow": null,
+
+          "producerType": null
+
+        },
+
+        "destination": {
+
+          "enabled": true,
+
+          "destinationType": "engage",
+
+          "url": "https://engage-qa1-api.adm01.com"
+
+        }
+
+      }
+
+    },
+
+    "marketingDatabasesDefinition": {
+
+      "marketingDatabases": [
+
+        {
+
+          "name": "EngageQA3MarketingDB_jaw_nokey",
+
+          "identifiers": [
+
+            {
+
+              "name": "email",
+
+              "type": "email",
+
+              "hashMode": null,
+
+              "hashAlgorithm": null,
+
+              "isEventOnly": false,
+
+              "isCaseSensitive": false,
+
+              "isRequired": false
+
+            },
+
+            {
+
+              "name": "RECIPIENT_ID",
+
+              "type": "engagecontactid",
+
+              "hashMode": null,
+
+              "hashAlgorithm": null,
+
+              "isEventOnly": false,
+
+              "isCaseSensitive": false,
+
+              "isRequired": false
+
+            },
+
+            {
+
+              "name": "contactId",
+
+              "type": "engagecontactid",
+
+              "hashMode": null,
+
+              "hashAlgorithm": null,
+
+              "isEventOnly": true,
+
+              "isCaseSensitive": false,
+
+              "isRequired": false
+
+            },
+
+            {
+
+              "name": "mobileNumber",
+
+              "type": "sms",
+
+              "hashMode": null,
+
+              "hashAlgorithm": null,
+
+              "isEventOnly": true,
+
+              "isCaseSensitive": false,
+
+              "isRequired": false
+
+            }
+
+          ],
+
+          "attributes": [
+
+            {
+
+              "name": "FirstName",
+
+              "type": "string",
+
+              "hashMode": null,
+
+              "hashAlgorithm": null,
+
+              "isEventOnly": false,
+
+              "isCaseSensitive": false,
+
+              "isRequired": false
+
+            },
+
+            {
+
+              "name": "LastName",
+
+              "type": "string",
+
+              "hashMode": null,
+
+              "hashAlgorithm": null,
+
+              "isEventOnly": false,
+
+              "isCaseSensitive": false,
+
+              "isRequired": false
+
+            }
+
+          ]
+
+        },
+
+        {
+
+          "name": "EngageQA3MarketingDB",
+
+          "identifiers": [
+
+            {
+
+              "name": "email",
+
+              "type": "email",
+
+              "hashMode": null,
+
+              "hashAlgorithm": null,
+
+              "isEventOnly": false,
+
+              "isCaseSensitive": false,
+
+              "isRequired": false
+
+            },
+
+            {
+
+              "name": "RECIPIENT_ID",
+
+              "type": "engagecontactid",
+
+              "hashMode": null,
+
+              "hashAlgorithm": null,
+
+              "isEventOnly": false,
+
+              "isCaseSensitive": false,
+
+              "isRequired": false
+
+            },
+
+            {
+
+              "name": "contactId",
+
+              "type": "engagecontactid",
+
+              "hashMode": null,
+
+              "hashAlgorithm": null,
+
+              "isEventOnly": true,
+
+              "isCaseSensitive": false,
+
+              "isRequired": false
+
+            },
+
+            {
+
+              "name": "mobileNumber",
+
+              "type": "sms",
+
+              "hashMode": null,
+
+              "hashAlgorithm": null,
+
+              "isEventOnly": true,
+
+              "isCaseSensitive": false,
+
+              "isRequired": false
+
+            }
+
+          ],
+
+          "attributes": [
+
+            {
+
+              "name": "FirstName",
+
+              "type": "string",
+
+              "hashMode": null,
+
+              "hashAlgorithm": null,
+
+              "isEventOnly": false,
+
+              "isCaseSensitive": false,
+
+              "isRequired": false
+
+            },
+
+            {
+
+              "name": "LastName",
+
+              "type": "string",
+
+              "hashMode": null,
+
+              "hashAlgorithm": null,
+
+              "isEventOnly": false,
+
+              "isCaseSensitive": false,
+
+              "isRequired": false
+
+            }
+
+          ]
+
+        }
+
+      ]
+
+    }
+
+  }
+

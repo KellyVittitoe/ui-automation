@@ -1,0 +1,193 @@
+  {
+
+    "providerName": "IBM",
+
+    "description": "DESCRIPTION",
+
+    "name": "NAME",
+
+    "endpointTypes": {
+
+      "segment": {
+
+        "source": {
+
+          "enabled": true,
+
+          "url": "https://ubx-qa1-segment-da.adm01.com/DAEndpoint",
+
+          "dataWindow": 93,
+
+          "producerType": null
+
+        },
+
+        "destination": {
+
+          "enabled": false,
+
+          "destinationType": null,
+
+          "url": null
+
+        }
+
+      },
+
+      "event": {
+
+        "source": {
+
+          "enabled": true,
+
+          "url": null,
+
+          "dataWindow": null,
+
+          "producerType": null
+
+        },
+
+        "destination": {
+
+          "enabled": false,
+
+          "destinationType": "push",
+
+          "url": null
+
+        }
+
+      }
+
+    },
+
+    "marketingDatabasesDefinition": {
+
+      "marketingDatabases": [
+
+        {
+
+          "name": "IBMDA",
+
+          "identifiers": [
+
+            {
+
+              "name": "regID",
+
+              "type": "regId",
+
+              "hashMode": null,
+
+              "hashAlgorithm": null,
+
+              "isEventOnly": true,
+
+              "isCaseSensitive": false,
+
+              "isRequired": false
+
+            },
+
+            {
+
+              "name": "regEmailAddress",
+
+              "type": "email",
+
+              "hashMode": null,
+
+              "hashAlgorithm": null,
+
+              "isEventOnly": true,
+
+              "isCaseSensitive": false,
+
+              "isRequired": false
+
+            },
+
+            {
+
+              "name": "registrationid",
+
+              "type": "regId",
+
+              "hashMode": null,
+
+              "hashAlgorithm": null,
+
+              "isEventOnly": false,
+
+              "isCaseSensitive": false,
+
+              "isRequired": false
+
+            },
+
+            {
+
+              "name": "cookieId",
+
+              "type": "DAcookieId",
+
+              "hashMode": null,
+
+              "hashAlgorithm": null,
+
+              "isEventOnly": false,
+
+              "isCaseSensitive": false,
+
+              "isRequired": false
+
+            },
+
+            {
+
+              "name": "sessionId",
+
+              "type": "DASessionId",
+
+              "hashMode": null,
+
+              "hashAlgorithm": null,
+
+              "isEventOnly": false,
+
+              "isCaseSensitive": false,
+
+              "isRequired": false
+
+            },
+
+            {
+
+              "name": "email_address",
+
+              "type": "email",
+
+              "hashMode": null,
+
+              "hashAlgorithm": null,
+
+              "isEventOnly": false,
+
+              "isCaseSensitive": false,
+
+              "isRequired": false
+
+            }
+
+          ],
+
+          "attributes": []
+
+        }
+
+      ]
+
+    }
+
+    }

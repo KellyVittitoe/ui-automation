@@ -1,0 +1,14 @@
+﻿
+{"attributes":
+{"oauthURL":"https://open.mediamath.com/api/auth",
+"oauthUsername":"ibm",
+"oauthPassword":"EKMtbkyc",
+"xmlAPIUrl":"https://open.mediamath.com/api/ibm/segments",
+"agencyID":"107630",
+"partnerName":"IBM",
+"idSourceTwoLetterNamespace":"mm",
+"segmentSourceTwoLetterNamespace":"im",
+"ftpServerDomain":"sftp.mediamath.com",
+"ftpServerUserName":"ibm",
+"ftpServerPassword":"vldtjX48mLh7OlNPl1nL"}
+}
